@@ -68,7 +68,7 @@ def login():
         if user is None or not user.check_password(form.password.data):
             app.logger.critical('Invalid login attempt')
             return redirect(url_for('login'))
-        app.logger.critical('Admin logged in successfully')
+        app.logger.critical('admin logged in successfully')
         
         login_user(user, remember=form.remember_me.data)
         next_page = request.args.get('next')
