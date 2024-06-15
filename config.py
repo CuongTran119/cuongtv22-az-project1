@@ -10,9 +10,9 @@ class Config(object):
     BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'cuongtv22storageblob'
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cuongtv22cmsaz.database.windows.net'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cuongtv22cms1.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'cuongtv22cmsdb'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cuongtv22admincms'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cuongtv22admincms1'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Password123'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = f'mssql+pyodbc://{SQL_USER_NAME}:{quote_plus(SQL_PASSWORD)}@{SQL_SERVER}:1433/{SQL_DATABASE}?driver=ODBC+Driver+17+for+SQL+Server'
