@@ -7,7 +7,7 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'cuongtv22storageblob'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'cuongtv22storageblob'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or '6dVSNGuNhZ+LI8Bw+P6ADtDCnQs58Gkx2bbLaoYShmSO4OS0a6TTtg1ODYBZcgrd74sKNwbMY0PL+ASt8iPlJQ=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'cuongtv22cms1.database.windows.net'
